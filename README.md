@@ -1,4 +1,4 @@
-# Veil of darkness analysis on San Diego County Sheriff's Department stop data
+# Veil of darkness - Police stop data
 By: [Lauryn Schroeder](https://www.sandiegouniontribune.com/sdut-lauryn-schroeder-staff.html) and [Lyndsay Winkley](https://www.sandiegouniontribune.com/sdut-lyndsay-winkley-staff.html)
 
 This repository contains data and code for the analysis [reported and published](XXXXXX) by *The San Diego Union-Tribune* on Jan. 30, 2021.
