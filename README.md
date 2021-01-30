@@ -8,13 +8,15 @@ This repository contains data and code for the analysis [reported and published]
 The Racial and Identity Profiling Act of 2015 (RIPA) requires nearly all California law enforcement agencies to submit demographic data on all
 detentions and searches. The Union-Tribune obtained in January stop data from the San Diego County Sheriff's Department under the California Public Records Act.
 
-The Union-Tribune collected this data to conduct what is known as a "Veil of Darkness" test, which relies on the hypothesis that officers who are engaged in racial profiling are less likely to identify a driver’s race after dark than during daylight. Under this hypothesis, if deputies stop drivers of a certain race at a smaller proportion at night than during daylight hours, there may be evidence of the presence of racial profiling.
+The Union-Tribune collected this data to conduct what is known as a "Veil of Darkness" test, which is used by criminal justice researchers across the country, tests for racial profiling by determining whether law officers pulled over people of a particular race at a higher rate when it’s light outside — and race is presumably more visible — than when it’s dark.
+
+which relies on the hypothesis that officers who are engaged in racial profiling are less likely to identify a driver’s race after dark than during daylight. Under this hypothesis, if deputies stop drivers of a certain race at a smaller proportion at night than during daylight hours, there may be evidence of the presence of racial profiling.
 
 The Union-Tribune modeled its Veil of Darkness analysis on Stanford University's [Open Policing Project](https://openpolicing.stanford.edu/tutorials/) and the methodology of previous Veil of Darkness analyses conducted by the [RIPA Board](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/ripa-board-report-2020.pdf).
 
 ### Methodology Notes
 
-Sheriff data contains all pedestrian and traffic stops from July 2018 through June 2020. The original data tables are compiled in four, newline-deliminated JSON files, with nested data frames for each individual involved in each stop. Since more than one individual can be involved a stop (deputies are required to record the ethnicity of drivers and passengers) the Union-Tribune opted to analyze the race of each person involved, which is the same technique used by RIPA officials.
+The sheriff department's data contains all pedestrian and traffic stops from July 2018 through June 2020. The original data tables are compiled in four, newline-deliminated JSON files, with nested data frames for each individual involved in each stop. Since more than one individual can be involved a stop (deputies are required to record the ethnicity of drivers and passengers) the Union-Tribune opted to analyze the race of each person involved, which is the same technique used by RIPA officials.
 
 To avoid analyzing an incomplete set of data in 2018 and incorporating abnormalities in driving patterns due to the coronavirus pandemic in early 2020, the Union-Tribune opted to conduct its Veil of Darkness analysis on the 44,500 individuals involved in traffic stops in 2019.
 
