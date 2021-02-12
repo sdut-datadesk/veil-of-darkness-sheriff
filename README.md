@@ -1,4 +1,4 @@
-# Veil of Darkness
+# Veil of Darkness analysis on San Diego County Sheriff's Department stop data
 By: [Lauryn Schroeder](https://www.sandiegouniontribune.com/sdut-lauryn-schroeder-staff.html) and [Lyndsay Winkley](https://www.sandiegouniontribune.com/sdut-lyndsay-winkley-staff.html)
 
 This repository contains data and code for the analysis [reported and published](XXXXXX) by *The San Diego Union-Tribune* on Jan. 30, 2021.
@@ -8,7 +8,7 @@ This repository contains data and code for the analysis [reported and published]
 The Racial and Identity Profiling Act of 2015 (RIPA) requires nearly all California law enforcement agencies to submit demographic data on all
 detentions and searches. The Union-Tribune obtained in January stop data from the San Diego County Sheriff's Department under the California Public Records Act.
 
-The Union-Tribune collected this data to conduct what is known as a "Veil of Darkness" test, which is used by criminal justice researchers across the country, tests for racial profiling by determining whether law officers pulled over people of a particular race at a higher rate when it’s light outside — and race is presumably more visible — than when it’s dark.
+The Union-Tribune collected this data to conduct what is known as a "Veil of Darkness" test, which is used by criminal justice researchers across the country. It tests for racial profiling by determining whether law officers pulled over people of a particular race at a higher rate when it’s light outside — and race is presumably more visible — than when it’s dark.
 
 The Union-Tribune modeled its Veil of Darkness analysis on Stanford University's [Open Policing Project](https://openpolicing.stanford.edu/tutorials/) and the methodology of previous Veil of Darkness analyses conducted by the [RIPA Board](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/ripa-board-report-2020.pdf).
 
@@ -22,17 +22,17 @@ Of the 44,500 stops, the Union-Tribune chose to analyze stops that occurred duri
 
 Analyzing stops in this inter-twilight period adjusts for both the time of day and the demographics of commuters, since commuters who leave work at 6 p.m. will most likely be on the road at the same time each day, regardless of whether it’s light or dark outside.
 
-This filter also allows for a more accurate analysis of how darkness plays a role in traffic stops throughout the year, since sunset occurs at different times throughout the year -- typically earlier in the winter and later in the summer.
+This filter also allows for a more accurate analysis of how darkness plays a role in traffic stops throughout the year, since sunset occurs at different times throughout the year - earlier in the winter and later in the summer.
 
 The Union-Tribune removed any stops that occurred in an approximate 30-minute window between sunset and dusk, also known as the end of civil twilight, as the amount of light during this time is more open to interpretation and is not blatantly night or day.
 
 In some circumstances, deputies list more than one race for an individual involved in traffic stops. 
 
-Individuals who were perceived by deputies as Hispanic and any other race, were included in Hispanic totals. Individuals perceived as more than one race were categorized into a "mixed" race, or those with two or more race. The remaining race categories were left the same.
+Individuals who were perceived by deputies as Hispanic and any other race, were included in Hispanic totals. Individuals perceived as more than one race were categorized as those with two or more race. The remaining race categories were left the same.
 
 When conducting a Veil of Darkness test, latitude and longitude coordinates for each stop, along with the time in which a stop occurred, are typically used to determine if a stop took place during the day or at night.
 
-Since these coordinates were not provided by the sheriff’s department, the Union-Tribune used the latitude and longitude coordinates of the city in which the stop took place.
+Since these coordinates were not provided by the sheriff’s department, the Union-Tribune used the latitude and longitude coordinates of the city in which the stop occurred.
 
 Coordinates for cities in San Diego County with a population of more than 500 people were obtained through [GeoNames](http://download.geonames.org/export/dump/), an online geographical database that collects and maintains information for more than 25 million locations in the world. Coordinates for smaller cities and unincorporated areas of the county were collected manually by the Union-Tribune. When stops occurred in an unincorporated area of the county, the Union-Tribune manually collected the center of the unincorporated areas and matched these data points to the original table.
 
@@ -45,7 +45,7 @@ Coordinates for cities in San Diego County with a population of more than 500 pe
 - `JAN_-_JUN_2020.txt` - Stop data from San Diego Sheriff's Department. Contains stops from January through June 2020.
 - `JUL_-_DEC_2018.txt` - Stop data from San Diego Sheriff's Department. Contains stops from July through December 2018.
 - `JUL-DEC_2019.txt` - Stop data from San Diego Sheriff's Department. Contains stops from July through December 2019.
-- `vod-analysis.R` - Import and analysis R script documenting findings published by the Union-Tribune.
+- `vod-analysis-sheriff.R` - Import and analysis R script documenting findings published by the Union-Tribune.
 
 ### Sourcing
 Please link and source [*The San Diego Union-Tribune*](https://www.sandiegouniontribune.com/) when referencing any analysis or findings in published work.
