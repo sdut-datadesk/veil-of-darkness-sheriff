@@ -13,7 +13,7 @@ library(lubridate)
 library(suncalc)
 
 # Set working directory
-setwd("~/Desktop/veil-of-darkness-sheriff")
+setwd("~/Documents/OneDrive - NantMedia Holdings LLC/123Lauryn/ripa")
 
 ###################################################################
 ######################## IMPORT 1ST DF ############################
@@ -21,7 +21,7 @@ setwd("~/Desktop/veil-of-darkness-sheriff")
 
 # Import
 library(jsonlite)
-test1 <- stream_in(file("JUL_-_DEC_2018.txt"))
+test1 <- stream_in(file("sdso-originals/JUL_-_DEC_2018.txt"))
 
 # Flatten
 test1 <- jsonlite::flatten(test1)
@@ -77,7 +77,7 @@ remove(test1, test1_tbl)
 ###################################################################
 
 # Import
-test2 <- stream_in(file("JAN_-_JUN_2019.txt"))
+test2 <- stream_in(file("sdso-originals/JAN_-_JUN_2019.txt"))
 
 # Flatten
 test2 <- jsonlite::flatten(test2)
@@ -127,7 +127,7 @@ remove(test2, test2_tbl)
 ###################################################################
 
 # Import
-test3 <- stream_in(file("JUL-DEC_2019.txt"))
+test3 <- stream_in(file("sdso-originals/JUL-DEC_2019.txt"))
 
 # Flatten
 test3 <- jsonlite::flatten(test3)
@@ -177,7 +177,7 @@ remove(test3, test3_tbl)
 ###################################################################
 
 # Import
-test4 <- stream_in(file("JAN_-_JUN_2020.txt"))
+test4 <- stream_in(file("sdso-originals/JAN_-_JUN_2020.txt"))
 
 # Flatten
 test4 <- jsonlite::flatten(test4)
@@ -279,7 +279,7 @@ final <- final %>%
 
 # Import city lat and long coordinates data
 library(readr)
-cities <- read_delim("cities500.txt", 
+cities <- read_delim("sdso-originals/cities500.txt", 
                      "\t", escape_double = FALSE, col_names = FALSE, 
                      trim_ws = TRUE)
 
@@ -301,7 +301,7 @@ cities <- cities %>%
   select(geonameid, name, lat, long)
 
 # Import list of smaller cities, collected manually
-extra_cities <- read_csv("extra-unincorporated-cities-lat-long.csv")
+extra_cities <- read_csv("sdso-originals/extra-unincorporated-cities-lat-long.csv")
 
 # Bind two city dfs
 cities_final <- rbind(cities, extra_cities)
@@ -362,7 +362,7 @@ final <- final %>%
 ############### IMPORT TRAFFIC CITATION DESCRIPTIONS ##############
 ###################################################################
 
-offenses <- read_csv("offense_codes.csv", 
+offenses <- read_csv("sdso-originals/offense_codes.csv", 
                      col_types = cols(code1 = col_skip(), 
                                       code10 = col_skip(), code11 = col_skip(), 
                                       code2 = col_skip(), code3 = col_skip(), 
@@ -575,7 +575,7 @@ race_all <- final %>%
   mutate(per_total = round((total / sum(total))*100,1)) %>% 
   arrange(desc(per_total))
 
-# Calculate percent of for race of 2019 stops
+# Calculate percent of race of 2019 stops
 race19 <- final19 %>% 
   group_by(race_condensed) %>% 
   summarise(total = n()) %>% 
@@ -651,3 +651,4 @@ stops19 <- final19 %>%
   summarise(total = n())
 ## Stops == 43,290
 ## vs Individuals == 44,524
+
