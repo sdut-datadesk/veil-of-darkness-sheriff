@@ -36,7 +36,7 @@ Since these coordinates were not provided by the sheriff’s department, the Uni
 
 Coordinates for cities in San Diego County with a population of more than 500 people were obtained through [GeoNames](http://download.geonames.org/export/dump/), an online geographical database that collects and maintains information for more than 25 million locations in the world. Coordinates for smaller cities and unincorporated areas of the county were collected manually by the Union-Tribune. When stops occurred in an unincorporated area of the county, the Union-Tribune manually collected the center of the unincorporated areas and matched these data points to the original table.
 
-### The SDUT-vod repository contains the following:
+### The SDUT repository contains the following:
 
 - `cities500.txt` - Latitude and longitude coordinates of cities in world with population of 500 or more. Original data from [GeoNames](http://download.geonames.org/export/dump/).
 - `extra-unincorporated-cities-lat-long.csv` - Latitude and longitude coordinates of cities not in GeoNames database. Collected manually by the Union-Tribune.
