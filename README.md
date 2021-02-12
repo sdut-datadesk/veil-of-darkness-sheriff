@@ -18,7 +18,7 @@ The sheriff department's data contains all pedestrian and traffic stops from Jul
 
 To avoid analyzing an incomplete set of data in 2018 and incorporating abnormalities in driving patterns due to the coronavirus pandemic in early 2020, the Union-Tribune opted to conduct its Veil of Darkness analysis on the 44,500 individuals involved in traffic stops in 2019.
 
-Of the 44,500 stops, the Union-Tribune chose to analyze stops that occurred during what is known as the “inter-twilight period,” which is the range from the earliest time of dusk in a year to the latest time dusk occurs in that same year.
+Of that total, the Union-Tribune chose to analyze stops that occurred during what is known as the “inter-twilight period,” which is the range from the earliest time of dusk in a year to the latest time dusk occurs in that same year.
 
 Analyzing stops in this inter-twilight period adjusts for both the time of day and the demographics of commuters, since commuters who leave work at 6 p.m. will most likely be on the road at the same time each day, regardless of whether it’s light or dark outside.
 
@@ -26,7 +26,7 @@ This filter also allows for a more accurate analysis of how darkness plays a rol
 
 The Union-Tribune removed any stops that occurred in an approximate 30-minute window between sunset and dusk, also known as the end of civil twilight, as the amount of light during this time is more open to interpretation and is not blatantly night or day.
 
-In some circumstances, deputies list more than one race for an individual involved in traffic stops. 
+In some circumstances, deputies list more than one perceived race for an individual involved in traffic stops. 
 
 Individuals who were perceived by deputies as Hispanic and any other race, were included in Hispanic totals. Individuals perceived as more than one race were categorized as those with two or more race. The remaining race categories were left the same.
 
