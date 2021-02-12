@@ -12,7 +12,7 @@ The Union-Tribune collected this data to conduct what is known as a "Veil of Dar
 
 The Union-Tribune modeled its Veil of Darkness analysis on Stanford University's [Open Policing Project](https://openpolicing.stanford.edu/tutorials/) and the methodology of previous Veil of Darkness analyses conducted by the [RIPA Board](https://oag.ca.gov/sites/all/files/agweb/pdfs/ripa/ripa-board-report-2020.pdf).
 
-### Methodology Notes
+### Methodology / Notes
 
 The sheriff department's data contains all pedestrian and traffic stops from July 2018 through June 2020. The original data tables are compiled in four, newline-deliminated JSON files, with nested data frames for each individual involved in each stop. Since more than one individual can be involved a stop (deputies are required to record the ethnicity of drivers and passengers) the Union-Tribune opted to analyze the race of each person involved, which is the same technique used by RIPA officials.
 
