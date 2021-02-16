@@ -16,6 +16,8 @@ The Union-Tribune modeled its Veil of Darkness analysis on Stanford University's
 
 The sheriff department's data contains all pedestrian and traffic stops from July 2018 through June 2020. The original data tables are compiled in four, newline-deliminated JSON files, with nested data frames for each individual involved in each stop. Since more than one individual can be involved a stop (deputies are required to record the ethnicity of drivers and passengers) the Union-Tribune opted to analyze the race of each person involved, which is the same technique used by RIPA officials.
 
+Parts of the analysis code contained in this notebook was written by the [Stanford Open Policing Project](https://openpolicing.stanford.edu/), which has analyzed traffic stop data at dozens of law enforcement agencies across the nation. The remaining code was written by the Union-Tribune to apply to SDPD data.
+
 To avoid analyzing an incomplete set of data in 2018 and incorporating abnormalities in driving patterns due to the coronavirus pandemic in early 2020, the Union-Tribune opted to conduct its Veil of Darkness analysis on the 44,500 individuals involved in traffic stops in 2019.
 
 Of that total, the Union-Tribune chose to analyze stops that occurred during what is known as the “inter-twilight period,” which is the range from the earliest time of dusk in a year to the latest time dusk occurs in that same year.
